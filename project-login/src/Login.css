@@ -57,13 +57,20 @@ button:hover {
 }
 
 .form-row {
-  display: blocky;
-  float: left;
-  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
 }
-.form-row span{
+.form-span{
   
-  display: block;  
+  display: flex;
+  align-items: center;
+  margin: 5px 0;  
+}
+.form-span input[type="checkbox"] {
+  margin-right: 5px;
+}
+.form-span span{
+  flex-grow: 1;
 }
 .ID,
 .password {

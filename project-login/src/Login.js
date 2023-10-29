@@ -43,6 +43,7 @@ function Login() {
         />
          <a className="change-password-link" href="/change-password">Change Password</a>
             <div className="form-row">
+              <div className="form-span">
               <span>
                 <input type="checkbox"  checked={rememberMe}
                   onChange={() => setRememberMe(!rememberMe)}/> Remember Me
@@ -52,6 +53,7 @@ function Login() {
                   onChange={() => setAgreeToTerms(!agreeToTerms)}/>
                   Agree to<a href="/Terms-Conditions">Terms & Conditions</a>
               </span>
+              </div>
             </div>
         <button onClick={handleLogin}>Login</button>
         <p>Don't have an account? <a href="/signup">Register Here</a></p>
